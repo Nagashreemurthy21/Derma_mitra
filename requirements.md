@@ -1,168 +1,58 @@
-# Requirements Document
+# Software Requirements Specification (SRS)
+## DermaMitra: AI-Assisted Early Skin Risk Awareness and Referral Platform
+Generated using Kiro AI Spec Assistant and refined by the DermaMitra team.
 
-## Project Title
-DermaMitra – Intelligent Early Skin Risk Awareness & Referral Platform
-
----
-
-## 1. Product Vision
-To democratize dermatology awareness by enabling every individual, regardless of geography or income, to recognize skin risk early and seek timely, appropriate care.
-
----
-
-## 2. Background & Motivation
-Across rural and resource-constrained regions, treatable skin conditions frequently escalate due to delayed recognition and limited access to specialists. Lack of early triage results in preventable suffering, financial burden, and overcrowded tertiary hospitals.
-
-A scalable, AI-assisted awareness layer can significantly shift healthcare from reactive treatment to proactive prevention.
+**Version:** 1.0  
+**Date:** February 8, 2026  
+**Status:** Draft for Review  
+**Classification:** Public
 
 ---
 
-## 3. Mission Statement
-Empower communities with actionable, understandable, and trustworthy skin health guidance within minutes.
+## Document Control
+
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| 1.0 | Feb 8, 2026 | DermaMitra Team | Initial Release |
 
 ---
 
-## 4. Problem Definition
-Users face:
-- Limited dermatology access
-- Long travel distances
-- Cost barriers
-- Underestimation of symptoms
-- Absence of triage support
+## Executive Summary
 
-There is a need for a first-line digital guide that helps users decide **what to do next**.
+DermaMitra is a responsible AI-powered decision-support platform designed to bridge the critical gap in dermatological healthcare access for rural and low-resource communities. The system empowers community health workers (CHWs) and individuals to identify potential skin health risks early, understand severity levels, and make informed decisions about seeking appropriate medical care.
+
+**Critical Positioning:** DermaMitra is explicitly designed as a clinical decision-support tool, not a diagnostic system. It augments—never replaces—professional medical judgment and serves as a triage and awareness mechanism to improve healthcare access equity.
 
 ---
 
-## 5. Solution Overview
-DermaMitra provides AI-assisted risk stratification by analyzing images and symptom descriptions and translating them into:
+## 1. Product Vision and Mission
 
-- understandable risk levels
-- practical early-care steps
-- time-sensitive referral advice
+### 1.1 Vision Statement
 
-The system is a **decision-support tool**, not a diagnostic authority.
+To democratize access to early skin health awareness in underserved communities worldwide, reducing preventable complications through responsible AI-assisted risk stratification and timely medical referrals.
 
----
+### 1.2 Mission Statement
 
-## 6. Stakeholders
-- Individuals & families
-- Community health workers
-- Rural clinics
-- NGOs
-- Public health planners
-- Telemedicine providers
+DermaMitra's mission is to:
+- Provide accessible, culturally-sensitive skin health risk awareness tools for populations with limited healthcare infrastructure
+- Empower community health workers with AI-assisted decision support that respects their expertise and local knowledge
+- Facilitate early detection and appropriate referral pathways for skin conditions that require medical attention
+- Build trust through transparent, ethical AI practices that prioritize patient safety and data privacy
+- Create measurable improvements in health-seeking behavior and clinical outcomes in target communities
 
----
+### 1.3 Core Principles
 
-## 7. Goals & Outcomes
-
-### Short-Term
-- Increase early reporting behavior.
-- Improve hygiene practices.
-
-### Mid-Term
-- Reduce advanced-stage cases.
-- Optimize hospital visits.
-
-### Long-Term
-- Enable population-level surveillance.
-- Support preventive healthcare planning.
+1. **Safety First:** Conservative risk stratification that errs on the side of medical referral
+2. **Human-Centered:** Technology serves healthcare workers and patients, not the reverse
+3. **Transparency:** Clear communication about system capabilities and limitations
+4. **Equity:** Designed for low-literacy, low-connectivity, and resource-constrained environments
+5. **Accountability:** Traceable decision pathways and continuous monitoring for bias and errors
 
 ---
 
-## 8. Functional Requirements
+## 2. Background and Motivation
 
-### 8.1 Risk Assessment
-The system shall:
-- Accept image input.
-- Accept multimodal symptom descriptions.
-- Process data through AI models.
-- Provide probabilistic condition grouping.
-- Display confidence levels.
+### 2.1 Problem Context
 
----
-
-### 8.2 Guidance & Actionability
-The system shall translate predictions into:
-- Immediate precautions.
-- Safe home-care steps.
-- Red-flag symptoms.
-- Suggested timeline for consultation.
-
----
-
-### 8.3 Referral Intelligence
-- Recommend appropriate care level.
-- Provide nearby facility information.
-- Enable teleconsultation readiness.
-
----
-
-### 8.4 User Empowerment
-- Provide educational micro-content.
-- Improve awareness of spread & prevention.
-- Offer follow-up reminders.
-
----
-
-### 8.5 Longitudinal Tracking
-- Maintain case history.
-- Monitor progression patterns.
-
----
-
-### 8.6 Administrative & Public Health Support
-- Provide anonymized trend data.
-- Enable outbreak indicators.
-
----
-
-## 9. Non-Functional Requirements
-
-### Usability
-- Designed for low literacy.
-- Voice and icon assistance.
-
-### Performance
-- Near real-time inference.
-
-### Reliability
-- Works under unstable connectivity.
-
-### Fairness
-- Avoid bias across skin tones & age groups.
-
-### Transparency
-- Provide understandable reasoning.
-
----
-
-## 10. Ethical Principles
-- No definitive diagnosis claims.
-- Encourage professional consultation.
-- Obtain informed consent.
-- Privacy-first design.
-
----
-
-## 11. Constraints & Risks
-- Dataset bias.
-- Misinterpretation of outputs.
-- Limited follow-up compliance.
-
-Mitigation strategies must be built into messaging.
-
----
-
-## 12. Measurable Success Indicators
-- % increase in early consultations.
-- Reduced emergency cases.
-- User trust ratings.
-- Adoption by health workers.
-
----
-
-## 13. Future Readiness
-The platform should be extensible to additional disease categories and integrated healthcare workflows.
+Dermatological conditions affect over 1.9 billion people globally, with disproportionate impact on rural and low-resource communities. Key challenges include:
 
