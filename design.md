@@ -1,151 +1,39 @@
 # System Design Document
+## DermaMitra: AI-Assisted Early Skin Risk Awareness and Referral Platform
 
-## Project Title
-DermaMitra – Intelligent Early Skin Risk Awareness & Referral Platform
-
----
-
-## 1. Design Intent
-To create a resilient, inclusive, explainable, and scalable AI-enabled triage assistant suitable for real-world rural deployment.
+**Version:** 1.0  
+**Date:** February 8, 2026  
+**Classification:** Technical Architecture Specification  
+**Target Audience:** Technical Reviewers, System Architects, Implementation Partners
 
 ---
 
-## 2. System Principles
-- Human-centered
-- Assistive, not authoritative
-- Trust-building
-- Expandable
-- Low-resource compatible
+## Document Control
+
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| 1.0 | Feb 8, 2026 | DermaMitra Engineering Team | Initial Architecture Release |
 
 ---
 
-## 3. Macro Architecture
+## Executive Technical Summary
 
-Client Interface
-   ↓
-Access & Identity Layer
-   ↓
-Application Services
-   ↓
-AI Risk Evaluation Engine
-   ↓
-Guidance & Referral Engine
-   ↓
-Secure Data Infrastructure
-   ↓
-Analytics & Public Health Insights
+DermaMitra represents a next-generation clinical decision-support system architected specifically for resource-constrained healthcare environments. The platform employs a hybrid edge-cloud architecture that balances AI model sophistication with operational constraints of rural deployments, including intermittent connectivity, limited computational resources, and diverse user capabilities.
+
+**Core Technical Differentiators:**
+- Offline-first architecture with intelligent synchronization
+- Explainable AI pipeline with uncertainty quantification
+- Multi-modal input processing (image, text, voice)
+- Privacy-preserving federated learning capabilities
+- Modular microservices design for incremental deployment
+- Standards-compliant interoperability layer (FHIR, HL7)
 
 ---
 
-## 4. Component Design
+## 1. Design Intent and Philosophy
 
-### 4.1 Client Interface
-- Guided capture.
-- Symptom wizard.
-- Voice navigation.
-- Visual urgency meter.
+### 1.1 Architectural Philosophy
 
----
+DermaMitra's architecture is guided by five foundational principles:
 
-### 4.2 Access Layer
-- Authentication.
-- Consent capture.
-- Session handling.
-
----
-
-### 4.3 Application Services
-- Request orchestration.
-- Data normalization.
-- Logging & auditing.
-
----
-
-### 4.4 AI Risk Evaluation
-Pipeline includes:
-- Image enhancement.
-- Feature embedding.
-- Multi-class risk modeling.
-- Uncertainty estimation.
-
-Primary output:
-Risk tier rather than diagnosis.
-
----
-
-### 4.5 Guidance Engine
-Maps risk tier into:
-- Behavior instructions.
-- Hygiene protocols.
-- Watch symptoms.
-- Escalation urgency.
-
----
-
-### 4.6 Referral Layer
-- Facility discovery.
-- Telemedicine compatibility.
-- Transport awareness.
-
----
-
-### 4.7 Data Infrastructure
-- Encrypted storage.
-- Role-based access.
-- Anonymized datasets for research.
-
----
-
-## 5. Explainability Framework
-Provide users with:
-- contributing factors
-- visible triggers for urgency
-- next best action
-
----
-
-## 6. Resilience Strategy
-- Offline-first capture.
-- Deferred processing.
-- Retry pipelines.
-
----
-
-## 7. Scalability Vision
-Architecture supports:
-- addition of new models
-- multilingual expansion
-- national deployment
-- integration with digital health IDs
-
----
-
-## 8. AI Lifecycle Management
-- Continuous improvement.
-- Bias monitoring.
-- Dataset refresh pipelines.
-
----
-
-## 9. Privacy & Governance
-- Data minimization.
-- Consent revocation.
-- Transparent usage policies.
-
----
-
-## 10. Operational Model
-Future deployment may involve partnerships with:
-- health ministries
-- NGOs
-- telemedicine networks
-
----
-
-## 11. Innovation Differentiators
-Unlike simple symptom checkers, DermaMitra focuses on:
-- risk triage
-- behavioral guidance
-- explainability
-- rural-first design
-
+**1. Human-AI Collaboration Over Automation**
